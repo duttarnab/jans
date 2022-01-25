@@ -61,12 +61,13 @@ Summary of steps :
     ```bash
     docker logs  <container-id>  2>&1 | grep "Bootstrap Password:"
     ```
-5. Head to `https://<VM-IP-ADDRESS-FROM-FIRST-STEP>` and login with the username `admin` and the password from the previous step.
-6. After logging in from the top-left menu select `Apps & Marketplace` and you will be taken to the Charts page.
-7. Search for `Gluu` and begin your installation.
-8. During Step 1 of installation, be sure to select the `Customize Helm options before install` options.
-9. In Step 2, customize the settings for the Janssen installation
-10. In Step 3, unselect the `Wait` option
+5. Head to `https://<VM-IP-ADDRESS-FROM-FIRST-STEP>` and login with the username `admin` and the password from the previous step. If you are logging into Rancher for the first time, you'll need to enter just the password, and on the next step, Rancher will ask you to reset your current password.
+6. Next you'll see Rancher home page with list of existing clusters. By default, the name of newly created cluster would be `local`. Click on the cluster name to go to dashboard.
+7. From the top-left menu expand `Apps & Marketplace` and click `charts`.
+8. Search for `Gluu` and begin your installation.
+9. During Step 1 of installation, be sure to select the `Customize Helm options before install` options.
+10. In Step 2, customize the settings for the Janssen installation if you want to. Specifically `Optional Services` from where you can enable Janssen modules.
+11. In Step 3, unselect the `Wait` option and start installation.
 
 ### Quickstart Janssen with microk8s
 
