@@ -3797,6 +3797,12 @@ components:
         - alg
         - exp
       properties:
+        name:
+          type: string
+          description: The name of the key.
+        descr:
+          type: string
+          description: The key description.
         kid:
           type: string
           description: The unique identifier for the key.
